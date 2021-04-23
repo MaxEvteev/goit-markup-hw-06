@@ -681,15 +681,15 @@
                             ПОДПИШИТЕСЬ НА РАССЫЛКУ
                         </h2>
                         <form class="e-mail-form-field">
-                            <label for="email" class="e-mail-form-label"
-                                >E-mail</label
-                            >
                             <input
                                 type="email"
                                 name="email"
                                 id="email"
                                 class="footer-e-mail-form-imput"
                             />
+                            <label for="email" class="e-mail-form-label"
+                                >E-mail</label
+                            >
                             <button
                                 type="submit"
                                 class="footer-e-mail-form-button"
@@ -713,6 +713,90 @@
                         <svg class="modal-close-button-icon">
                             <use href="./images/icons.svg#icon-close"></use>
                         </svg>
+                    </button>
+                    <h2 class="modal-heading">
+                        Оставьте свои данные, мы вам перезвоним
+                    </h2>
+                    <form class="modal-page-form">
+                        <div class="form-field">
+                            <label for="name" class="form-label">Имя</label>
+                            <input
+                                type="text"
+                                name="name"
+                                id="name"
+                                class="form-imput"
+                            />
+                            <svg class="modal-page-form-icon">
+                                <use
+                                    href="./images/icons.svg#icon-person-black-18dp-1"
+                                ></use>
+                            </svg>
+                        </div>
+                        <div class="form-field">
+                            <label for="tel" class="form-label">Телефон</label>
+                            <input
+                                type="tel"
+                                name="tel"
+                                id="tel"
+                                class="form-imput"
+                            />
+                            <svg class="modal-page-form-icon">
+                                <use
+                                    href="./images/icons.svg#icon-phone-black-18dp-1"
+                                ></use>
+                            </svg>
+                        </div>
+                        <div class="form-field">
+                            <label for="mail" class="form-label">Почта</label>
+                            <input
+                                type="mail"
+                                name="mail"
+                                id="mail"
+                                class="form-imput"
+                            />
+                            <svg class="modal-page-form-icon">
+                                <use
+                                    href="./images/icons.svg#icon-email-black-18dp-1"
+                                ></use>
+                            </svg>
+                        </div>
+                        <div class="form-field">
+                            <label for="comment" class="form-label"
+                                >Комментарий
+                            </label>
+                            <textarea
+                                name="comment"
+                                id="comment"
+                                rows="3"
+                                placeholder="Введите текст"
+                                class="form-textarea"
+                            ></textarea>
+                        </div>
+                    </form>
+                    <div class="form-checkbox">
+                        <label for="checkbox" class="checkbox-label">
+                            <span class="checkbox-container">
+                                <input
+                                    type="checkbox"
+                                    name="checkbox"
+                                    id="checkbox"
+                                    class="form-checkbox-imput"
+                                />
+                                <svg class="checkbox-icon">
+                                    <use
+                                        href="./images/icons.svg#icon-icon-check"
+                                    ></use>
+                                </svg>
+                                Соглашаюсь с рассылкой и принимаю
+                                <a href="#" class="form-checkbox-link">
+                                    Условия договора</a
+                                >
+                            </span>
+                        </label>
+                    </div>
+
+                    <button type="submit" class="modal-page-form-button">
+                        Отправить
                     </button>
                 </div>
             </div>

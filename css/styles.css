@@ -451,6 +451,26 @@ body {
     margin-left: 12px;
 }
 
+.modal-page-form-button {
+    color: #ffffff;
+    background-color: var(--accent-color);
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.87;
+    letter-spacing: 0.06em;
+    cursor: pointer;
+    width: 200px;
+    height: 50px;
+    border-radius: 4px;
+    border: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    margin-left: 164px;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+}
+
 /* Наши клиенты */
 
 .clients-heading {
@@ -659,7 +679,7 @@ body {
 }
 
 .footer-e-mail-form-imput {
-    width: 350px;
+    width: 354px;
     height: 50px;
     background-color: #2f303a;
     border-radius: 4px;
@@ -667,6 +687,21 @@ body {
     box-sizing: border-box;
     filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
     padding-left: 16px;
+    transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    outline: none;
+    color: rgba(255, 255, 255, 0.6);
+}
+
+.footer-e-mail-form-imput:focus {
+    border-color: #2196f3;
+}
+
+.footer-e-mail-form-imput:hover {
+    border-color: #2196f3;
+}
+
+.footer-e-mail-form-imput:focus ~ .e-mail-form-label {
+    opacity: 0;
 }
 
 .footer-sotials-link {
@@ -691,7 +726,6 @@ body {
 
 .for-flex {
     display: flex;
-    justify-content: space-between;
 }
 /*Portfolio buttons*/
 
@@ -857,6 +891,7 @@ body {
     width: 528px;
     height: 581px;
 }
+
 .modal-close-button {
     position: absolute;
     width: 30px;
@@ -871,6 +906,7 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
+    transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .modal-close-button-icon {
@@ -881,4 +917,167 @@ body {
     background-size: contain;
     box-sizing: border-box;
     margin: auto;
+}
+
+.modal-close-button:hover {
+    fill: #2196f3;
+}
+
+.modal-heading {
+    text-align: center;
+    font-weight: 700;
+    font-style: normal;
+    font-size: 20px;
+    line-height: 1.17;
+    letter-spacing: 0.03em;
+    padding-top: 40px;
+    margin-top: 0px;
+    margin-bottom: 12px;
+}
+
+.modal-page-form {
+    display: flex;
+    flex-direction: column;
+    margin-left: 40px;
+    margin-right: 40px;
+}
+
+.form-field {
+    position: relative;
+    margin-bottom: 10px;
+    display: flex;
+    flex-direction: column;
+}
+
+.form-field label {
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 12px;
+    margin-bottom: 4px;
+}
+
+.form-textarea {
+    resize: none;
+    height: 120px;
+    padding-top: 12px;
+    padding-left: 16px;
+    padding-bottom: 12px;
+    padding-right: 16px;
+    border: 1px solid rgba(33, 33, 33, 0.2);
+    box-sizing: border-box;
+    border-radius: 4px;
+    font-size: 12px;
+    transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    outline: none;
+}
+
+.form-imput {
+    height: 40px;
+    border: 1px solid rgba(33, 33, 33, 0.2);
+    border-radius: 4px;
+    font-size: 16px;
+    padding-left: 42px;
+    transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    outline: none;
+}
+
+.form-label {
+    color: #757575;
+}
+
+.form-textarea::placeholder {
+    color: rgba(117, 117, 117, 0.5);
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 12px;
+}
+
+.modal-page-form-icon {
+    position: absolute;
+    display: inline-block;
+    width: 18px;
+    height: 18px;
+    bottom: 11px;
+    left: 12px;
+    transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.form-textarea:focus {
+    border-color: #2196f3;
+}
+
+.form-textarea:hover {
+    border-color: #2196f3;
+}
+
+.form-imput:focus {
+    border-color: #2196f3;
+}
+
+.form-imput:hover {
+    border-color: #2196f3;
+}
+
+.form-imput:hover + .modal-page-form-icon {
+    fill: #2196f3;
+}
+
+.form-imput:focus + .modal-page-form-icon {
+    fill: #2196f3;
+}
+
+.form-checkbox {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.form-checkbox-link {
+    color: #2196f3;
+    margin-left: 5px;
+}
+
+.checkbox-label {
+    color: #757575;
+    font-size: 14px;
+    line-height: 1.7;
+    letter-spacing: 0.03em;
+    margin-top: 10px;
+}
+
+.form-checkbox-imput {
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+}
+
+.checkbox-icon {
+    display: inline-block;
+    width: 16px;
+    height: 15px;
+    background-color: white;
+    border-radius: 2px;
+    left: 15px;
+    opacity: 1;
+    border: 2px solid;
+    border-color: #212121;
+    margin-top: 4px;
+    margin-right: 7px;
+    margin-bottom: 30px;
+}
+
+.form-checkbox-imput:checked + .checkbox-icon {
+    background-color: #2196f3;
+    background-size: contain;
+    border-color: transparent;
+    background-origin: border-box;
+    border: none;
+}
+
+.checkbox-container {
+    display: flex;
+    justify-content: center;
 }
